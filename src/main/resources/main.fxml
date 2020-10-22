@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.veldor.rdc_drag.controllers.MainController">
+   <VBox fx:id="mainContainer" alignment="CENTER" onDragOver="#handleDragOver" onDragDropped="#handleDragDropped">
+      <Label text="Перетащите сюда файлы или кликните по кнопке, чтобы выбрать"/>
+      <Label fx:id="statusLabel"/>
+      <Button mnemonicParsing="false" text="Нажмите, чтобы выбрать файлы"/>
+   </VBox>
+</StackPane>
